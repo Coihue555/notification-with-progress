@@ -6,4 +6,6 @@
 
 ## Notificacion Error
 
-![Notificacion Error](/assets/error.mp4)
+![Notificacion Error](/assets/error.gif)
+
+y en color verde seria un mensaje de confirmacion o tarea exitosa...
