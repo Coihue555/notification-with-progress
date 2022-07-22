@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>CDM Notificaciones</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <button onclick="llamada()">Llamar notificacion</button>
 
-        <div id="notificacion">
-            <div class="mensaje">
-                Codigo HTML de error
-            </div>
-            <div id="informacion"></div>
-            <!-- <div id="error"></div> -->
-            <!-- <div id="confirmacion"></div> -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CDM Notificaciones</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button onclick="llamada()">Llamar notificacion</button>
+
+    <div id="notificacion">
+        <div class="mensaje">
+            Codigo HTML de error
         </div>
+        <div id="informacion"></div>
+        <!-- <div id="error"></div> -->
+        <!-- <div id="confirmacion"></div> -->
+    </div>
 
-        <script>
-            function llamada() {
+    <script>
+        function llamada() {
             var x = document.getElementById("notificacion");
             x.classList.toggle('mostrar');
-            setTimeout(function(){ x.className = x.className.replace("mostrar", ""); }, 3000);
+            setTimeout(function() {
+                x.className = x.className.replace("mostrar", "");
+            }, 3000);
             var y = document.getElementById("informacion");
             y.classList.toggle('mostrar');
-            setTimeout(function(){ y.className = y.className.replace("mostrar", ""); }, 3000);
-            }
-        </script>
-    </body>
+            setTimeout(function() {
+                y.className = y.className.replace("mostrar", "");
+            }, 3000);
+        }
+    </script>
+</body>
+
 </html>
