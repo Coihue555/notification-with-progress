@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CDM Notificaciones</title>
+    <title>Notificacion con linea de progreso</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
@@ -17,9 +17,7 @@
         <div class="mensaje">
             Codigo HTML de error
         </div>
-        <div id="informacion"></div>
-        <!-- <div id="error"></div> -->
-        <!-- <div id="confirmacion"></div> -->
+        <div id="progreso" class="azul"></div> <!-- class puede ser 'verde' o 'rojo' tambien -->
     </div>
 
     <script>
@@ -29,7 +27,7 @@
             setTimeout(function() {
                 x.className = x.className.replace("mostrar", "");
             }, 3000);
-            var y = document.getElementById("informacion");
+            var y = document.getElementById("progreso");
             y.classList.toggle('mostrar');
             setTimeout(function() {
                 y.className = y.className.replace("mostrar", "");
